@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
 from pathlib import Path
+#new
 import dj_database_url
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -81,6 +82,7 @@ WSGI_APPLICATION = 'student.wsgi.application'
 #     }
 # }
 
+#new
 DATABASES = {
     'default': dj_database_url.config()
 }
@@ -127,3 +129,6 @@ STATIC_URL = '/static/'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+#new
+STATIC_ROOT=os.path.join(BASE_DIR,'static')
